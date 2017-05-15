@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Geogrotesque-Bold';
+  src: url('Geogrotesque-Bold.eot?#iefix') format('embedded-opentype'),  url('Geogrotesque-Bold.otf')  format('opentype'),
+	     url('Geogrotesque-Bold.woff') format('woff'), url('Geogrotesque-Bold.ttf')  format('truetype'), url('Geogrotesque-Bold.svg#Geogrotesque-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
