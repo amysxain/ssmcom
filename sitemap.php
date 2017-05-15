@@ -40,7 +40,7 @@
         </div>
         <div class="clearfix"></div>
 <div class="about-content redius white padding30 m30top m30bottom z-depth-2">
-			<h2 class="main-head nm-top small-haed mbottom-10">All Stores</h2>
+			<h2 class="main-head nm-top">All Stores</h2>
 			
 			<ul class="col-lg-4 col-md-6 col-xs-12 bulleted">
         <li><a href="">PETCO Grooming</a></li>

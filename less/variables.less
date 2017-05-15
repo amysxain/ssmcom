@@ -10,24 +10,21 @@
 }
 .block {display:block;} 
 .inline-block { display:inline-block}
-.no-padding { padding:0 !important;}
-.no-margin { margin:0 !important;}
-.padding30 { padding: 30px !important;}
+.no-padding { padding:0;}
+.no-margin { margin:0;}
+.padding30 { padding: 30px;}
 @stMargin: 30px;
-@pclr  : #10b6d2;
-@sclr  : #222;
-@tclr  : #3b4ea1;
-@yclr : #fedb3f;
+@pclr  : #2856b6;
+@sclr  : #2c3e50;
+@tclr  : #ff4081;
 @black : #000;
 @white : #FFF;
 .pbg { background:@pclr}
 .sbg { background:@sclr}
 .tbg { background:@tclr}
-.ybg { background:@yclr}
 .pclr { color:@pclr}
 .sclr { color:@sclr}
 .tclr { color:@tclr}
-.yclr { color:@yclr}
 .wclr { color:@white}
 .bclr { color:@black}
 .black { background:#000;}
@@ -45,11 +42,3 @@
 .z-depth-3{box-shadow:0 6px 10px 0 rgba(0,0,0,0.08),0 1px 18px 0 rgba(0,0,0,0.06),0 3px 5px -1px rgba(0,0,0,0.05)}
 .z-depth-4,.modal{box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.08), 0 3px 14px 2px rgba(0, 0, 0, 0.06), 0 5px 5px -3px rgba(0, 0, 0, 0.05);}
 .z-depth-5{box-shadow:0 16px 24px 2px rgba(0,0,0,0.08),0 6px 30px 5px rgba(0,0,0,0.06),0 8px 10px -5px rgba(0,0,0,0.12)}
-.grad {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f44542+0,fd4f6b+100 */
-	.pbg; /* Old browsers */
-	background: -moz-linear-gradient(left,  @tclr 0%, @pclr 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  @tclr 0%,@pclr 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  @tclr 0%,@pclr 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@tclr', endColorstr='@pclr',GradientType=1 ); /* IE6-9 */
-}

@@ -1,7 +1,20 @@
 <?php include'header.php'; ?>
 <div class="clearfix"></div>
 
-<div class="sbg nm-bottom">         <div class="container">             <div class="row">                 <ul class="breadcrumb">                     <li><a href="">Home</a></li>                     <li>»</li>                     <li><a href="">Categories</a></li>                     <li>»</li>                     <li><a href="">Sub Category</a></li>                     <li>»</li>                     <li><span>Store Name</span></li>                 </ul>             </div>         </div>     </div><div class="clearfix"></div>
+<div class="store-card sbg">
+			<div class="container">
+				
+				<ul class="breadcrumb">
+        <li><a href="">Home</a></li>
+        <li><a href="">Categories</a></li>
+        <li><a href="">Sub Category</a></li>
+        <li><span>Store Name</span></li>
+        
+        </ul>
+				
+			</div>	
+				
+	</div><div class="clearfix"></div>
 <div class="container">
 <div class="about-content text-center redius white padding30 m30top m30bottom z-depth-2">
 			<h2 class="main-head nm-top">About Super Saver Mama</h2>

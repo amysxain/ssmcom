@@ -19,23 +19,9 @@ $(window).on("resize", function() {
 			$("#carousel-two").carousel({interval: 1500})
         }, 500)
 		
-
+		$(".navbar-header").prependTo('.nav-wrap')
     }
-    if (a <= 767) {
-        $(".navbar-header").prependTo('.nav-wrap');
-        $(".header-actions > li:first-child").wrapInner('<div class="search-responsive"></div>').appendTo('.nav-wrap');
-        $(".header-actions > li:last-child").wrapInner('<div class="category-responsive"></div>').appendTo('.nav-wrap');
-
-            $(".nav-wrap").children('li').wrapAll('<ul class="responsive-fix"></ul>')
-    }else{
-        /*window.addEventListener('resize', function () {
-            "use strict";
-            window.location.href = window.location.href;
-        });*/
-
-
-    }
-
+   
 }).resize();
 
 
@@ -43,23 +29,10 @@ $(window).on("resize", function() {
 $("#carousel-first").carousel({interval: 1000 * 6})
 $("#carousel-two").carousel({interval: 1500 * 6})
 
-$('.cat-trigger').click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-    $('.categories-dropdown').slideToggle();
-
-})
    //
-$('.scroller').mCustomScrollbar();
+	$('.scroller').mCustomScrollbar();
 
-$(".store-targets a").click(function(e) {
-	e.preventDefault();
-	//alert(urlHash)
-	var urlHash = $(this).attr('href')
-    $('html, body').animate({
-        scrollTop: $(urlHash).offset().top
-    }, 2000);
-});
+
 
 
 
@@ -151,128 +124,6 @@ $(":radio").change(function(a) {
     var b = $(this).data("id");
     $(".split").removeClass("in"), $("#" + b).addClass("in")
 });
-
-
-
-
-
-
-$(document).ready(function() {
-
-    $this = $(this), window.displayBoxIndex = -1, $(document).on("keyup", ".searchjs > div > input", function(a) {
-        $(".resultContainer").show(), thisLn = $(this).val().length, thisLn < 1 && ($(".resultContainer").hide(), $("#searchResults ul li a").removeClass("selected"))
-    }), $(document).on("click", "html", function(a) {
-        $(".resultContainer").hide()
-    }), $(window).focus(function() {
-        $(".resultContainer").hide()
-    }), $(document).on("click", ".searchjs", function(a) {
-        a.stopPropagation()
-    });
-    var a = function(a) {
-
-        displayBoxIndex += a;
-        var b = $(".searchResults ul li a");
-        displayBoxIndex >= b.length && (displayBoxIndex = 0), displayBoxIndex < 0 && (displayBoxIndex = b.length - 1);
-        var c = "selected";
-        b.removeClass(c).eq(displayBoxIndex).addClass(c)
-    };
-    $(document).on("keyup", function(b) {
-        /*if (13 == b.keyCode) {
-            var c = $(".searchResults ul li a.selected").attr("href");
-            return window.location.href = c, !1
-        }*/
-        40 == b.keyCode && a(1), 38 == b.keyCode && a(-1)
-    });
-	
-	
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 500) {
-    $('.totop').fadeIn();
-  } else {
-    $('.totop').fadeOut();
-  }
-});
-	
-	$(".totop").on('click',function (e) {
-		e.preventDefault()
-   //1 second of animation time
-   //html works for FFX but not Chrome
-   //body works for Chrome but not FFX
-   //This strange selector seems to work universally
-   $("html, body").animate({scrollTop: 0}, 1000);
-});
-
-
-    var owl = $('#owl');
-
-// Go to the next item
-    $('.onn').click(function(e) {
-        e.preventDefault();
-        owl.trigger('next.owl.carousel');
-    })
-// Go to the previous item
-    $('.opp').click(function(e) {
-        e.preventDefault();
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl.trigger('prev.owl.carousel', [300]);
-    })
-
-
-    var owl2 = $('#owl2');
-    // Go to the next item
-    $('.on').click(function(e) {
-        e.preventDefault();
-        owl2.trigger('next.owl.carousel');
-    })
-// Go to the previous item
-    $('.op').click(function(e) {
-        e.preventDefault();
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl2.trigger('prev.owl.carousel', [300]);
-    })
-
-    owl.owlCarousel({
-        loop:true,
-        margin:30,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            768:{
-                items:3
-            },
-            1199:{
-                items:5
-            }
-        }
-    })
-
-    owl2.owlCarousel({
-        loop:true,
-        margin:30,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            768:{
-                items:3
-            },
-            1199:{
-                items:5
-            }
-        }
-    })
-	
-	
-});
-
-
-
 
 
 
